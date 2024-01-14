@@ -1,4 +1,4 @@
-using G;
+using Test;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
         [MenuItem("Zahodim/Ny_Tochno_Suda/Opa")]
         private static void NewNestedOption()
         {
-            EditorWindow.GetWindow(typeof(MyWindow), false, "G");
+            EditorWindow.GetWindow(typeof(MyWindow), false, "TestWindow");
         }
     }
 }

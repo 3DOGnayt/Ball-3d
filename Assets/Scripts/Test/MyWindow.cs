@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace G
+namespace Test
 {
     public class MyWindow : EditorWindow
     {
@@ -15,8 +15,7 @@ namespace G
         private void OnGUI()
         {
             GUILayout.Label("Базовые настройки", EditorStyles.boldLabel);
-            ObjectInstantiate = EditorGUILayout.ObjectField("Объект который хотим",
-                ObjectInstantiate, typeof(GameObject), true) as GameObject;
+            ObjectInstantiate = EditorGUILayout.ObjectField("Объект который хотим", ObjectInstantiate, typeof(GameObject), true) as GameObject;
             _nameObject = EditorGUILayout.TextField("Имя объекта", _nameObject);
             _groupEnabled = EditorGUILayout.BeginToggleGroup("Дополнительные настройки", _groupEnabled);
             _randomColor = EditorGUILayout.Toggle("Случайный цвет", _randomColor);

@@ -59,24 +59,26 @@
     <Compile Include="Assets\Scripts\Area\StateOn.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityView.cs" />
     <Compile Include="Assets\Scripts\Test\MyWindow.cs" />
+    <Compile Include="Assets\Scripts\UI\Bars.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ITakeHp.cs" />
+    <Compile Include="Assets\Scripts\Area\ZeroHp.cs" />
     <Compile Include="Assets\Scripts\Area\Boosts\HealthBoost.cs" />
-    <Compile Include="Assets\Scripts\Area\Traps\Traps.cs" />
+    <Compile Include="Assets\Scripts\Area\Traps\TrapPingPong.cs" />
     <Compile Include="Assets\Scripts\UI\WinOrDiedMenu.cs" />
     <Compile Include="Assets\Scripts\Test\Menu.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityController.cs" />
+    <Compile Include="Assets\Scripts\Core\CameraSetPosition.cs" />
     <Compile Include="Assets\Scripts\Ability\RealisationAbility\Blink.cs" />
     <Compile Include="Assets\Scripts\Area\Boosts\SpeedBoost.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ITakeDamage.cs" />
+    <Compile Include="Assets\Scripts\Ability\IAbility.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ISpeed.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityBase.cs" />
-    <Compile Include="Assets\Scripts\Core\CameraSetPosition.cs" />
     <Compile Include="Assets\Scripts\Core\Player.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerCamera.cs" />
-    <Compile Include="Assets\Scripts\UI\Bars.cs" />
-    <Compile Include="Assets\Scripts\Area\ZeroHp.cs" />
-    <Compile Include="Assets\Scripts\Ability\IAbility.cs" />
+    <Compile Include="Assets\Scripts\Area\Traps\RotateWall.cs" />
+    <Compile Include="Assets\Scripts\UI\RestartLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

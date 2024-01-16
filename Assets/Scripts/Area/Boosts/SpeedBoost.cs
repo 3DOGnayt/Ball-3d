@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
-    private float _speed = 4;
+    [SerializeField] private float _speed;
 
     private void Update()
     {

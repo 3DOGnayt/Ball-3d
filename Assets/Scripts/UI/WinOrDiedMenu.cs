@@ -1,20 +1,21 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WinOrDiedMenu : MonoBehaviour
+namespace Assets.Scripts.UI
 {
-    [SerializeField] private GameObject _menu = null;
-    [SerializeField] private Button _restart = null;
-
-    private void Awake()
+    public class WinOrDiedMenu : MonoBehaviour
     {
-        _restart.onClick.AddListener(Restart);
-    }
+        [SerializeField] private GameObject _menu = null;
+        [SerializeField] private Button _restart = null;
+        [SerializeField] private RestartLevel _restartLevel;
 
-    private void Restart()
-    {
-        _menu.SetActive(false);
-        Time.timeScale = 1f;        
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        private void Awake() => _restart.onClick.AddListener(Restart);
+
+        private void Restart()
+        {
+            _menu.SetActive(false);
+            Time.timeScale = 1f;
+            _restartLevel.Restart();
+        }
     }
 }
